@@ -1,10 +1,145 @@
-Contact
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | BSR</title>
 
-Email:
-becomesirius130@gmail.com
+<style>
 
-YouTube:
-https://www.youtube.com/@Become_Sirius
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-Instagram:
-https://www.instagram.com/become_sirius
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#000;
+color:white;
+text-align:center;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* ナビ */
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav a{
+color:#00d9ff;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff4da6;
+}
+
+/* メイン */
+
+main{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
+
+h1{
+font-size:3rem;
+color:#ff4da6;
+margin-bottom:20px;
+}
+
+p{
+font-size:1.2rem;
+margin-bottom:30px;
+}
+
+/* ボタン */
+
+.contact-box{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.contact-box a{
+background:#111;
+border:1px solid #00d9ff;
+color:#00d9ff;
+padding:15px 25px;
+border-radius:10px;
+text-decoration:none;
+font-size:18px;
+width:250px;
+}
+
+.contact-box a:hover{
+background:#00d9ff;
+color:#000;
+}
+
+/* フッター */
+
+footer{
+background:#111;
+padding:20px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="team.html">Team</a>
+<a href="activities.html">Activities</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<main>
+
+<h1>Contact</h1>
+
+<p>
+BSRへのお問い合わせはこちらからお願いします。
+</p>
+
+<div class="contact-box">
+
+<a href="mailto:becomesirius130@gmail.com">
+📧 Emailを送る
+</a>
+
+<a href="https://www.youtube.com/@Become_Sirius" target="_blank">
+📺 YouTube
+</a>
+
+<a href="https://www.instagram.com/become_sirius/?hl=ja" target="_blank">
+📸 Instagram
+</a>
+
+</div>
+
+</main>
+
+<footer>
+
+BSR | Become Sirius<br>
+Official Gaming & Creative Team
+
+</footer>
+
+</body>
+</html>
