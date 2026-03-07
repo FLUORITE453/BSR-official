@@ -1,1 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activities | BSR</title>
 
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:#000;
+color:white;
+text-align:center;
+}
+
+/* ナビ */
+
+nav{
+background:#111;
+padding:15px;
+}
+
+nav a{
+color:#00d9ff;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ff4da6;
+}
+
+/* タイトル */
+
+h1{
+margin-top:40px;
+font-size:3rem;
+color:#ff4da6;
+}
+
+/* セクション */
+
+.section{
+margin-top:50px;
+padding:20px;
+}
+
+/* カード */
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+.card{
+background:#111;
+border:1px solid #00d9ff;
+border-radius:10px;
+padding:20px;
+width:260px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00d9ff;
+}
+
+/* 動画 */
+
+iframe{
+margin-top:30px;
+border-radius:10px;
+}
+
+/* フッター */
+
+footer{
+margin-top:60px;
+padding:20px;
+background:#111;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="team.html">Team</a>
+<a href="activities.html">Activities</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+<h1>BSR Activities</h1>
+
+<div class="section">
+
+<h2>🎮 Our Activities</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gaming</h3>
+<p>BSRは様々なゲームで活動しています。</p>
+</div>
+
+<div class="card">
+<h3>Streaming</h3>
+<p>YouTubeで配信・動画投稿を行います。</p>
+</div>
+
+<div class="card">
+<h3>Creative</h3>
+<p>動画制作・企画・コミュニティ活動。</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>📺 Latest Video</h2>
+
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed?listType=user_uploads&list=Become_Sirius">
+</iframe>
+
+</div>
+
+<footer>
+
+BSR | Become Sirius<br>
+📧 becomesirius130@gmail.com
+
+</footer>
+
+</body>
+</html>
