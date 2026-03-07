@@ -46,23 +46,35 @@ font-size:3rem;
 color:#ff4da6;
 }
 
-/* メンバー */
+/* チーム */
 
 .team{
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-margin-top:40px;
 gap:30px;
+margin-top:50px;
+padding:20px;
 }
+
+/* メンバーカード */
 
 .member{
 background:#111;
-padding:20px;
-border-radius:10px;
-width:220px;
 border:1px solid #00d9ff;
+border-radius:12px;
+width:220px;
+padding:20px;
+transition:0.3s;
+cursor:pointer;
 }
+
+.member:hover{
+transform:translateY(-10px);
+box-shadow:0 0 20px #00d9ff;
+}
+
+/* 画像 */
 
 .member img{
 width:100px;
@@ -70,15 +82,27 @@ border-radius:50%;
 margin-bottom:10px;
 }
 
+/* 名前 */
+
 .member h2{
-font-size:1.4rem;
 color:#00d9ff;
+margin-bottom:5px;
 }
+
+/* 役職 */
 
 .member p{
 font-size:14px;
-margin-top:5px;
 }
+
+/* リンク装飾消す */
+
+.member-link{
+text-decoration:none;
+color:white;
+}
+
+/* フッター */
 
 footer{
 margin-top:60px;
@@ -103,23 +127,29 @@ background:#111;
 
 <div class="team">
 
+<a class="member-link" href="https://example.com" target="_blank">
 <div class="member">
 <img src="member1.png">
 <h2>FLUORITE</h2>
 <p>Founder / Creator</p>
 </div>
+</a>
 
+<a class="member-link" href="https://example.com" target="_blank">
 <div class="member">
 <img src="member2.png">
 <h2>Member Name</h2>
 <p>Player</p>
 </div>
+</a>
 
+<a class="member-link" href="https://example.com" target="_blank">
 <div class="member">
 <img src="member3.png">
 <h2>Member Name</h2>
 <p>Streamer</p>
 </div>
+</a>
 
 </div>
 
