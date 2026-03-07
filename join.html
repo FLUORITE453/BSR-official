@@ -2,93 +2,103 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Join BSR</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSR | join</title>
 
 <style>
-body {
-    margin:0;
-    background:#000;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align:center;
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-/* ナビゲーションバー */
-nav {
-    background:#111;
-    padding:15px;
-    text-align:center;
-    position: sticky;
-    top:0;
-    z-index:100;
+body{
+font-family:Arial, Helvetica, sans-serif;
+background:radial-gradient(circle at top,#020024,#000000);
+color:white;
+text-align:center;
+min-height:100vh;
+display:flex;
+flex-direction:column;
 }
 
-/* リンクデフォルト色：水色 */
-nav a {
-    color:#00ffff;  /* 水色 */
-    margin:0 15px;
-    text-decoration:none;
-    font-size:18px;
-    transition: color 0.3s;
+/* ナビ */
+nav{
+background:#111;
+padding:15px;
 }
 
-/* カーソルを合わせるとピンク */
-nav a:hover {
-    color:#ff4da6;  /* ピンク */
-}
-/* ヘッダー */
-header {
-    padding:60px 20px 20px 20px;
-    font-size:45px;
-    font-weight:bold;
+nav a{
+color:#00d9ff;
+margin:0 15px;
+font-weight:bold;
+text-decoration:none;
 }
 
-/* 段落 */
-p {
-    font-size:18px;
-    margin:10px 0;
+nav a:hover{
+color:#ff4da6;
 }
 
-/* 応募ボタン */
-.join-btn {
-    display:inline-block;
-    margin-top:40px;
-    padding:18px 50px;
-    background:#ff4da6;
-    color:white;
-    text-decoration:none;
-    border-radius:40px;
-    font-size:22px;
-    transition: background 0.3s;
+/* メイン */
+main{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
 }
 
-.join-btn:hover {
-    background:#ff2f90;
+/* ロゴ */
+.logo{
+width:170px;
+margin-bottom:20px;
+animation:glow 3s infinite alternate;
 }
 
-/* チーム規約リンク */
-.rules {
-    margin-top:40px;
-    font-size:16px;
+@keyframes glow{
+from{filter:drop-shadow(0 0 5px #ff4da6);}
+to{filter:drop-shadow(0 0 25px #ff4da6);}
 }
 
-/* aタグ全体色 */
-a {
-    color:#ff4da6;
-    text-decoration:none;
+/* タイトル */
+h1{
+font-size:3rem;
+color:#ff4da6;
+margin-bottom:15px;
 }
 
-a:hover {
-    text-decoration:underline;
+/* テキスト */
+p{
+font-size:1.2rem;
+margin-bottom:20px;
+}
+
+/* SNS */
+.social a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:#111;
+border:1px solid #00d9ff;
+color:#00d9ff;
+border-radius:8px;
+text-decoration:none;
+}
+
+.social a:hover{
+background:#00d9ff;
+color:#000;
 }
 
 /* フッター */
-footer {
-    margin-top:100px;
-    padding:20px;
-    border-top:1px solid #333;
-    font-size:14px;
+footer{
+background:#111;
+padding:20px;
+font-size:14px;
 }
+
 </style>
 </head>
 
