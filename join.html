@@ -5,61 +5,95 @@
 <title>Join BSR</title>
 
 <style>
-
-body{
-margin:0;
-background:#000;
-color:white;
-font-family:Arial,Helvetica,sans-serif;
-text-align:center;
+body {
+    margin:0;
+    background:#000;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
 }
 
-header{
-padding:60px;
-font-size:45px;
-font-weight:bold;
+/* ナビゲーションバー */
+nav {
+    background:#111;
+    padding:15px;
+    text-align:center;
+    position: sticky;
+    top:0;
+    z-index:100;
 }
 
-p{
-font-size:18px;
+nav a {
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-size:18px;
+    transition: color 0.3s;
 }
 
-.join-btn{
-display:inline-block;
-margin-top:40px;
-padding:18px 50px;
-background:#ff4da6;
-color:white;
-text-decoration:none;
-border-radius:40px;
-font-size:22px;
+nav a:hover {
+    color:#ff4da6;
 }
 
-.join-btn:hover{
-background:#ff2f90;
+/* ヘッダー */
+header {
+    padding:60px 20px 20px 20px;
+    font-size:45px;
+    font-weight:bold;
 }
 
-.rules{
-margin-top:40px;
-font-size:16px;
+/* 段落 */
+p {
+    font-size:18px;
+    margin:10px 0;
 }
 
-a{
-color:#ff4da6;
-text-decoration:none;
+/* 応募ボタン */
+.join-btn {
+    display:inline-block;
+    margin-top:40px;
+    padding:18px 50px;
+    background:#ff4da6;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:22px;
+    transition: background 0.3s;
 }
 
-footer{
-margin-top:100px;
-padding:20px;
-border-top:1px solid #333;
+.join-btn:hover {
+    background:#ff2f90;
 }
 
+/* チーム規約リンク */
+.rules {
+    margin-top:40px;
+    font-size:16px;
+}
+
+/* aタグ全体色 */
+a {
+    color:#ff4da6;
+    text-decoration:none;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+/* フッター */
+footer {
+    margin-top:100px;
+    padding:20px;
+    border-top:1px solid #333;
+    font-size:14px;
+}
 </style>
 </head>
 
 <body>
 
+<!-- ナビゲーションバー -->
 <nav>
   <a href="index.html">Home</a>
   <a href="team.html">Team</a>
@@ -68,21 +102,23 @@ border-top:1px solid #333;
   <a href="terms.html">利用規約</a>
 </nav>
 
+<!-- ヘッダー -->
 <header>Join BSR</header>
 
 <p>BSR (Become Sirius) のメンバーを募集しています。</p>
 <p>参加希望の方は以下の応募フォームから応募してください。</p>
 
+<!-- 応募ボタン -->
 <a class="join-btn" href="https://forms.gle/xk73sFeqFYuUiS5F9" target="_blank">
 応募フォームへ
 </a>
 
+<!-- チーム規約リンク -->
 <div class="rules">
-<p>
-応募前に <a href="rules.html">チーム規約</a> を確認してください。
-</p>
+<p>応募前に <a href="rules.html">チーム規約</a> を確認してください。</p>
 </div>
 
+<!-- フッター -->
 <footer>
 <p>BSR Official</p>
 <p>運営連絡先: <a href="mailto:becomesirius130@gmail.com">becomesirius130@gmail.com</a></p>
