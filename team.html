@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BSR Team</title>
+<title>BSR | teme</title>
 
 <style>
 
@@ -15,13 +15,15 @@ box-sizing:border-box;
 
 body{
 font-family:Arial, Helvetica, sans-serif;
-background:#000;
+background:radial-gradient(circle at top,#020024,#000000);
 color:white;
 text-align:center;
+min-height:100vh;
+display:flex;
+flex-direction:column;
 }
 
 /* ナビ */
-
 nav{
 background:#111;
 padding:15px;
@@ -30,91 +32,78 @@ padding:15px;
 nav a{
 color:#00d9ff;
 margin:0 15px;
-text-decoration:none;
 font-weight:bold;
+text-decoration:none;
 }
 
 nav a:hover{
 color:#ff4da6;
 }
 
-/* タイトル */
+/* メイン */
+main{
+flex:1;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+}
 
+/* ロゴ */
+.logo{
+width:170px;
+margin-bottom:20px;
+animation:glow 3s infinite alternate;
+}
+
+@keyframes glow{
+from{filter:drop-shadow(0 0 5px #ff4da6);}
+to{filter:drop-shadow(0 0 25px #ff4da6);}
+}
+
+/* タイトル */
 h1{
-margin-top:40px;
 font-size:3rem;
 color:#ff4da6;
+margin-bottom:15px;
 }
 
-/* チーム */
-
-.team{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:30px;
-margin-top:50px;
-padding:20px;
+/* テキスト */
+p{
+font-size:1.2rem;
+margin-bottom:20px;
 }
 
-/* メンバーカード */
-
-.member{
+/* SNS */
+.social a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
 background:#111;
 border:1px solid #00d9ff;
-border-radius:12px;
-width:220px;
-padding:20px;
-transition:0.3s;
-cursor:pointer;
-}
-
-.member:hover{
-transform:translateY(-10px);
-box-shadow:0 0 20px #00d9ff;
-}
-
-/* 画像 */
-
-.member img{
-width:100px;
-border-radius:50%;
-margin-bottom:10px;
-}
-
-/* 名前 */
-
-.member h2{
 color:#00d9ff;
-margin-bottom:5px;
-}
-
-/* 役職 */
-
-.member p{
-font-size:14px;
-}
-
-/* リンク装飾消す */
-
-.member-link{
+border-radius:8px;
 text-decoration:none;
-color:white;
+}
+
+.social a:hover{
+background:#00d9ff;
+color:#000;
 }
 
 /* フッター */
-
 footer{
-margin-top:60px;
-padding:20px;
 background:#111;
+padding:20px;
+font-size:14px;
 }
 
 </style>
-
 </head>
 
 <body>
+
 
 <nav>
 <a href="index.html">Home</a>
