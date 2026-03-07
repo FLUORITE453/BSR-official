@@ -114,44 +114,133 @@ font-size:14px;
 <a href="terms.html">利用規約</a>
 </nav>
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>BSR Team</title>
+
+<style>
+body {
+    background:#000;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+/* チームタイトル */
+h1 {
+    font-size:3rem;
+    color:#ff4da6;
+    margin:40px 0 20px 0;
+}
+
+/* チーム全体 */
+.team {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+    padding:20px;
+}
+
+/* メンバーカード */
+.member-link {
+    text-decoration:none; /* aタグの下線を消す */
+}
+
+.member {
+    background:#111;
+    padding:20px;
+    border-radius:15px;
+    width:220px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-5px);
+    box-shadow:0 0 15px #ff4da6;
+}
+
+/* メンバー画像 */
+.member img {
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* メンバー名 */
+.member h2 {
+    color:#00d9ff; /* 水色 */
+    margin-bottom:8px;
+}
+
+/* メンバー役職 */
+.member p {
+    color:#aaa;
+    margin:3px 0;
+    font-size:0.9rem;
+}
+
+/* フッター */
+footer {
+    background:#111;
+    padding:20px;
+    margin-top:40px;
+    font-size:14px;
+}
+
+footer a {
+    color:#00d9ff;
+    text-decoration:none;
+}
+
+footer a:hover {
+    color:#ff4da6;
+}
+
+</style>
+</head>
+
+<body>
+
 <h1>BSR Team</h1>
 
 <div class="team">
 
 <a class="member-link" href="https://fluorite453.github.io/" target="_blank">
-<div class="member">
-<img src="member1.png">
-<h2>FLUOrite453</h2>
-<p>Founder / CEO</p>
-<p>Player / YouTuber</p>
-<p>Streamer /  Creator</p>
-</div>
-</a>
-
-
-<a class="member-link" href="https://example.com" target="_blank">
-<div class="member">
-<img src="member2.png">
-<h2>Member Name</h2>
-<p>player</p>
-</div>
+  <div class="member">
+    <img src="member1.png" alt="FLUOrite453">
+    <h2>FLUOrite453</h2>
+    <p>Founder / CEO</p>
+    <p>Player / YouTuber</p>
+    <p>Streamer / Creator</p>
+  </div>
 </a>
 
 <a class="member-link" href="https://example.com" target="_blank">
-<div class="member">
-<img src="member3.png">
-<h2>Member Name</h2>
-<p>Streamer</p>
-</div>
+  <div class="member">
+    <img src="member2.png" alt="Member Name">
+    <h2>Member Name</h2>
+    <p>Player</p>
+  </div>
+</a>
+
+<a class="member-link" href="https://example.com" target="_blank">
+  <div class="member">
+    <img src="member3.png" alt="Member Name">
+    <h2>Member Name</h2>
+    <p>Streamer</p>
+  </div>
 </a>
 
 </div>
 
 <footer>
-
 BSR | Become Sirius<br>
-📧 becomesirius130@gmail.com
-
+📧 <a href="mailto:becomesirius130@gmail.com">becomesirius130@gmail.com</a>
 </footer>
 
 </body>
